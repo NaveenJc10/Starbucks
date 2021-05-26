@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/258dd76065.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="/images/logo.png" alt="" class="logo"></a>
+            <ul class="nav__bar">
+                <li id="active"><a href="#"><i class="fa fa-fw fa-home"></i >Home</a></li>
+                <li><a href="#"><i class="fas fa-mug-hot"></i> Menu</a></li>
+                <li><a href="#"><i class="fas fa-bullhorn"></i> What's New</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, suscipit! Ut quos maiores doloremque delectus reiciendis optio assumenda esse consequuntur voluptates! Porro impedit cumque asperiores iste nam est maxime tempore, ducimus,
+                    vitae ipsum rerum, necessitatibus fugit.</p>
+                <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="imgBox" data-aos-duration="1000" data-aos="fade-left">
+                <img src="/images/img1.png" class="starbucks">
+            </div>
+        </div>
+
+
+        <ul class="thumb">
+            <li><img src="/images/thumb1.png" onclick="imgSlider('/images/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="/images/thumb2.png" onclick="imgSlider('/images/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="/images/thumb3.png" onclick="imgSlider('/images/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="/images/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/images/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/images/instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:80px">Good to the Last Drop!</h1>
+
+            <button class="font">Get yours Now</button>
+        </div>
+    </div>
+
+
+
+    <section class="video">
+        <video autoplay muted loop src="/images/coffee.mp4"></video>
+    </section>
+
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">Our Heritage</a></li>
+                            <li><a href="#">Our Company</a></li>
+                            <li><a href="#">Career Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#">For Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Starbucks Malaysia</h3>
+                        <p>We are passionate purveyors of coffee and everything else that goes with a rewarding coffeehouse experience. We also offer a selection of premium Tazo® teas, fine pastries and other delectable treats to please the taste buds. And
+                            the music you hear in store is chosen for its artistry and appeal.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Starbucks Malaysia © 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
